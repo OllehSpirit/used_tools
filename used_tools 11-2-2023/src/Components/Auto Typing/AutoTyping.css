@@ -1,0 +1,39 @@
+.wrapper{
+    height: 13vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    position: absolute;
+    left: 800px;
+    top: 180px;
+    /* margin-top: -330px;
+    margin-bottom: 500px; */
+    /* margin-left: 650px; */
+}
+
+.typing-demo{
+    width: 33ch;
+    animation: typing 7s steps(33) infinite ;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid var(--blue);
+    font-family: monospace;
+    font-size: 2em;
+    background-image: linear-gradient(to right, #6d4e8f, #406992);
+    -webkit-text-fill-color: transparent;
+    background-clip: unset;
+    -webkit-background-clip: text;
+}
+
+@keyframes typing {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 33ch;
+    }
+    
+    100%{
+        width: 33ch;
+    }
+}

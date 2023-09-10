@@ -1,0 +1,43 @@
+  /* ------------------------------middle coloumn---------------------------- */
+  
+
+  .name{
+    position: relative;
+    left: -1em;
+    top: 0em;
+    margin-bottom: 10px;
+    padding: 0.7em 2.5em;
+    border-radius: 5px 3em 5px 3em;
+    border-radius: 5px 3em 5px 3em;
+    background: #eef0f2;
+    color: #131522;
+    box-shadow: 15px 5px 25px #101010;
+
+    width: 450px;
+    margin-left: 20px;
+    z-index: -10;
+}
+
+.span{
+    position: relative;
+    top: -10px;
+    left: 10px;
+    font-weight: 600;
+}
+
+.img{
+    background: linear-gradient(45deg, #a544ff 100%);
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    
+}
+
+.date{
+    font-size: 11px;
+    position: relative;
+    top: -10px;
+    left: 15px;
+
+    color: #5d5d5d;
+}

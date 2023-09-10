@@ -1,0 +1,46 @@
+.footer{
+    background-color: #2d2d2d;
+    height: 420px;
+    width: 120%;
+    margin-left: -100px;
+}
+
+.img{
+    height: 300px;
+    width: 300px;
+    display: inline;
+    margin-bottom: -300px;
+    margin-left: 350px;
+}
+
+.contact{
+    position: relative;
+    top: 100px;
+    color: #fff;
+    left: 690px;
+}
+
+.copy{
+    position: relative;
+    top: 200px;
+    color: #fff;
+    /* left: 550px; */
+    text-align: center;
+}
+
+@media (max-width:760px){
+    .footer{
+        position: relative;
+        top: 500px;
+    }
+    
+}
+@media (max-width:960px){
+
+    .contact{
+        position: relative;
+        top: 100px;
+        color: #fff;
+        left: 40px;
+    }
+}

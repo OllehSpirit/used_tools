@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background: #f5f6fa;
+}
+
+.wrapper .sidebar{
+	/* background: rgb(5, 68, 104); */
+    background: #2d2d2d;
+    /* background: #6b478d; */
+	position: fixed;
+	top: 61px;
+	left: 0;
+	width: 150px;
+	height: 100%;
+	padding: 20px 0;
+	transition: all 0.5s ease;
+
+    z-index: 10000;
+}
+
+.wrapper .sidebar .profile{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.wrapper .sidebar .profile img{
+	display: block;
+	width: 70%;
+	height: 70%;
+    border-radius: 50%;
+	margin: 0 auto;
+}
+
+.wrapper .sidebar .profile h3{
+	color: #ffffff;
+	margin: 10px 0 5px;
+}
+
+.wrapper .sidebar .profile p{ /*under user name*/
+	color: rgb(206, 240, 253); 
+	font-size: 14px;
+}
+
+.wrapper .sidebar ul li a{
+	display: block;
+	padding: 13px 20px;
+	/* border-bottom: 1px solid #10558d; */
+	border-bottom: 1px solid #646464;
+	color: rgb(241, 237, 237);
+    padding-top: 21px;
+    padding-bottom: 22px;
+    
+	font-size: 16px;
+	position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+	color: #dee4ec;
+	width: 30px;
+	display: inline-block;
+}
+
+ 
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+	color: var(--purple);
+
+	background:white;
+    border-right: 3px solid var(--purple);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+	color: var(--purple);
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+	display: block;
+}
+
+.wrapper .section{
+	width: calc(100% - 225px);
+	margin-left: 225px;
+	transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+	background: var(--purple);
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+ 
+}
+
+.wrapper .section .top_navbar .hamburger a{
+	font-size: 28px;
+	color: #f4fbff;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+	color: #a2ecff;
+}
+
+ 
+
+body.active .wrapper .sidebar{
+	left: -225px;
+}
+
+body.active .wrapper .section{
+	margin-left: 0;
+	width: 100%;
+}
+
+/* .sidebar header .toggle{
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%) rotate(180deg);
+    height: 25px;
+    width: 25px;
+    background-color: var(--primary-color);
+    color: var(--sidebar-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: var(--tran-05);
+}
+
+body.dark .sidebar header .toggle{
+    color: var(--text-color);
+}
+
+ */
+
+.wrapper.close .sidebar{
+    width: 88px;
+}
+.wrapper.close .text{
+    opacity: 0;
+    display: none;
+    height: 0;
+}
+.toggle{
+    transform: translateX(15px) translateY(50px) rotate(180deg);
+    transition-duration: 0.5s;
+
+    background-color: var(--purple);
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    position: fixed;
+    top: 85px;
+    left: 122px;
+    z-index: 10001;
+    cursor: pointer;
+}
+
+.wrapper.close .toggle{
+    transform: translateX(-48px) translateY(50px) rotate(0deg);
+    transition-duration: 0.5s;
+    /* left: calc(100% - 978px); */
+}
+.sidebar.close ~ .home{
+    left: 78px;
+    /* height: auto; */
+    width: calc(100% - 78px);
+}
+.wrapper ul{
+    position: relative;
+    bottom: 10px;
+}
+.wrapper.close ul{
+    position: relative;
+    bottom: 20px;
+}
+
+.sidebar.close li{
+    height: 50px;
+    padding: 0;
+}
+.wrapper.close .sidebar ul li a{
+    padding: 0 auto;
+    padding-top: 19px;
+    padding-bottom: 19px;
+}
+
+.wrapper.close .icon{
+    position: relative;
+    left: 12px;
+    top: 10px;
+    padding-bottom: 20px;
+}
+
+
+/* Search */
+.search-box{
+    border-radius: 6px;
+    background-color: whitesmoke;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.search-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    color: var(--purple);
+    /* border-radius: 6px; */
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}

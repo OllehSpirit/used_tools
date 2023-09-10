@@ -1,0 +1,39 @@
+.h2{
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(to right, #9776b9 20%, #6d4e8f 40%, #406992 60%, #6d97c0 80%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+
+    margin-bottom: 30px;
+
+    animation: animate 2s linear infinite;
+}
+
+@keyframes animate{
+    to{
+        background-position: 200% center;
+    }
+}
+
+@media (max-width: 760px){
+    .h2{
+        position: relative;
+        top: 450px;
+    }
+    .a{
+        position: relative;
+        top: 400px;
+    }
+}
+
+@media (max-width: 500px){
+    .h2{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,91 @@
+.btnRight{
+    position: relative;
+    left: 1250px;
+    top: 300px;
+
+    border-radius: 50%;
+    border-color: var(--purple);
+    background-color: whitesmoke;
+    padding: 15px;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+.btnRight:hover{
+    background-color: #ccbbdd;
+}
+
+
+.btnLeft{
+    position: relative;
+    left: 30px;
+    top: 300px;
+
+    border-radius: 50%;
+    border-color: var(--purple);
+    background-color: whitesmoke;
+    padding: 15px;
+
+    cursor: pointer;
+    z-index: 2;
+}
+
+.btnLeft:hover{
+    background-color: #ccbbdd;
+}
+
+/* ----------------------h2---------------- */
+.h2{
+    position: relative;
+    text-align: center;
+    font-size: 3rem;
+    background: linear-gradient(to right, #9776b9 20%, #6d4e8f 40%, #406992 60%, #6d97c0 80%);
+    background-size: 200% auto;
+    /* color: #000; */
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 600;
+
+    margin-top: 0px;
+    margin-bottom: -35px;
+    /* left: -290px; */
+    animation: animate 2s linear infinite;
+}
+
+.a{
+    position: relative;
+    top: 0px;
+    left: 1200px;
+    font-size: 15px;
+    
+    color: var(--purple);
+    font-weight: 600;
+
+    cursor: pointer;
+    z-index: 1;
+}
+
+@keyframes animate{
+    to{
+        background-position: 200% center;
+    }
+}
+
+@media (max-width: 760px){
+    .h2{
+        position: relative;
+        top: 450px;
+    }
+    .a{
+        position: relative;
+        top: 400px;
+    }
+}
+
+@media (max-width: 500px){
+    .h2{
+        font-size: 1.5rem;
+    }
+}
