@@ -95,7 +95,7 @@ return (
       <input type="email" placeholder="Email" className="input" required/>
       <input type="number" placeholder="Phone number (optional)" className='input' autoComplete="on"/><br/>
       <input type="password" placeholder="Password" className="input" id="password" onKeyUp={passwordLength} required/>
-      <i class="bi bi-eye-slash" id="togglePassword" onClick={togglePass}></i>
+      <i className={`bi bi-eye-slash`} id="togglePassword" onClick={togglePass}></i>
       <div className='barContainer'>
         <div id='passwordLength'></div>
       </div>
@@ -114,12 +114,12 @@ return (
       <div >
         <fieldset  className='birth'>
           <legend><b>Birthday</b></legend>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          <select className='sel'>
+          <select className='sel' >
             <option value="2004">2004</option>
             <option value="2003">2003</option>
             <option value="2002">2002</option>
             <option value="2001">2001</option>
-            <option value="2000" selected>2000</option>
+            <option value="2000" defaultValue>2000</option>
             <option value="1999">1999</option>
             <option value="1998">1998</option>
             <option value="1997">1997</option>

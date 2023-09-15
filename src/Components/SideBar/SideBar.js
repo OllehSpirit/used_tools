@@ -246,8 +246,8 @@ function SideBar(){
     
     return(
         <div>
-            <div class="wrapper close">
-            <div class="section">
+            <div className={`wrapper close`}>
+            <div className={`section`}>
                 {/* <div class="top_navbar">
                     <div class="hamburger">
                         <a href="#">
@@ -255,14 +255,14 @@ function SideBar(){
                         </a>
                     </div>
                 </div> */}
-                <i class='bx bx-chevron-right toggle' ></i>
+                <i className={`bx bx-chevron-right toggle`} ></i>
 
             </div>
-            <div class="sidebar ">
-                <div class="profile">
+            <div className={`sidebar`}>
+                <div className={`profile`}>
                     {/* <img src="https://1.bp.blogspot.com/-vhmWFWO2r8U/YLjr2A57toI/AAAAAAAACO4/0GBonlEZPmAiQW4uvkCTm5LvlJVd_-l_wCNcBGAsYHQ/s16000/team-1-2.jpg" alt="profile_picture"/> */}
                     <img src="Images/Me.jpg" alt="profile_picture"/>
-                    <h3 class="text">AnasAttoum</h3>
+                    <h3 className={`text`}>AnasAttoum</h3>
                     {/* <p class="text">Designer</p> */}
                 </div>
                 
@@ -273,8 +273,8 @@ function SideBar(){
                 {/* </li> */}
                     <li>
                         <a href="#Home" onClick={toggleList1} className='a'>
-                            <span class="icon"><i class="fas fa-home"></i></span>
-                            <span class="item text">Home</span>
+                            <span className={`icon`}><i className={`fas fa-home`}></i></span>
+                            <span className={`item text`}>Home</span>
                         </a>
                     </li>
                     
@@ -287,14 +287,14 @@ function SideBar(){
                     </li> */}
                     <li>
                         <a href="#MyProfile" onClick={toggleList5} className='e'>
-                            <span class="icon"><i class="fas fa-desktop"></i></span>
-                            <span class="item text">Profile</span>
+                            <span className={`icon`}><i className={`fas fa-desktop`}></i></span>
+                            <span className={`item text`}>Profile</span>
                         </a>
                     </li>
                     <li>
                         <a href="#Saved" onClick={toggleList6} className='f'>
-                            <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
-                            <span class="item text">Saved</span>
+                            <span className={`icon`}><i className={`fas fa-tachometer-alt`}></i></span>
+                            <span className={`item text`}>Saved</span>
                         </a>
                     </li>
                     {/* <li>
@@ -305,20 +305,20 @@ function SideBar(){
                     </li> */}
                     <li>
                         <a href="#LogOut" onClick={toggleList7} className='g'>
-                            <span class="icon"><i class="fas fa-cog"></i></span>
-                            <span class="item text">Log Out</span>
+                            <span className={`icon`}><i className={`fas fa-cog`}></i></span>
+                            <span className={`item text`}>Log Out</span>
                         </a>
                     </li>
                     <li>
                         <a href="#Donate" onClick={toggleList2} className='b'>
-                            <span class="icon"><i class="fas fa-user-friends"></i></span>
-                            <span class="item text">About us</span>
+                            <span className={`icon`}><i className={`fas fa-user-friends`}></i></span>
+                            <span className={`item text`}>About us</span>
                         </a>
                     </li>
                     <li>
                         <a href="#Buy" onClick={toggleList3} className='c'>
-                            <span class="icon"><i class="fas fa-database"></i></span>
-                            <span class="item text" style={{fontSize:'15px'}}>Contact us</span>
+                            <span className={`icon`}><i className={`fas fa-database`}></i></span>
+                            <span className={`item text`} style={{fontSize:'15px'}}>Contact us</span>
                         </a>
                     </li>
                 </ul>

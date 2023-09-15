@@ -119,7 +119,7 @@ return (
             <option value="2003">2003</option>
             <option value="2002">2002</option>
             <option value="2001">2001</option>
-            <option value="2000" selected>2000</option>
+            <option value="2000" defaultValue>2000</option>
             <option value="1999">1999</option>
             <option value="1998">1998</option>
             <option value="1997">1997</option>

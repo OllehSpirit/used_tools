@@ -1,11 +1,10 @@
 import React from "react";
-import { useContext } from 'react';
-import StarBookmark from '../StarBookmark/StarBookmark'
-import AllContext from '../../Store/Context';
+import { useContext } from "react";
+import StarBookmark from "../StarBookmark/StarBookmark";
+import AllContext from "../../Store/Context";
 import styles from "./CardStore.module.css";
 
 const CardStore = () => {
-
   const context = useContext(AllContext);
 
   return (
@@ -20,16 +19,14 @@ const CardStore = () => {
             <div className={styles.group33}>
               <img
                 alt=""
-                className={
-                  styles.istockphoto1314210006170667a1
-                }
+                className={styles.istockphoto1314210006170667a1}
                 // src="https://static.overlay-tech.com/assets/4ca6d844-f054-4c5c-b329-c8fced0d87b5.png"
                 src="Images/Store.jpg"
               />
             </div>
             <p className={styles.re}>RE</p>
-          <div className={styles.rectangle64}></div>
-          <div className={styles.rectangle63}></div>
+            <div className={styles.rectangle64}></div>
+            <div className={styles.rectangle63}></div>
           </div>
           <div className={styles.relativeWrapperOne}>
             <p className={styles.homsSyria}>Family Store</p>
@@ -42,10 +39,16 @@ const CardStore = () => {
               <a href="ViewStore" className={styles.viewStore}>View Store</a>
             </div>
           </div> */}
-          <a href="#ViewStore" className={styles.view}><span className={styles.viewTxt} onClick={context.toggleProfile}>View Store</span></a>
+          <a href="#ViewStore" className={styles.view}>
+            <span className={styles.viewTxt} onClick={context.toggleProfile}>
+              View Store
+            </span>
+          </a>
 
-          <div className={styles.VIEW2}><StarBookmark/></div>
+          <div className={styles.VIEW2}>
+            <StarBookmark />
           </div>
+        </div>
       </div>
     </div>
   );
