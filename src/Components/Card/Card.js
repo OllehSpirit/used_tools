@@ -4,9 +4,10 @@ import StarBookmark from "../StarBookmark/StarBookmark";
 
 import "./Card.css";
 
-function Card() {
+function Card(props) {
   const context = useContext(AllContext);
-
+  const product = props.product;
+  
   return (
     <div>
       <div>
@@ -20,23 +21,20 @@ function Card() {
               </div>
               <div className={`postedBy`} onClick={context.toggleProfile}>
                 <i className={`fa fa-user`}></i>
-                <span> Posted by AnasAttoum</span>
+                <span> Posted by {product.username}</span>
               </div>
               {/* <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/169963/photo-1429043794791-eb8f26f44081.jpeg" alt='Product'/> */}
-              <img src="Images/Product4.webp" alt="Product" />
+              {/* <img src={`data:image/png;base64,aHR0cDovL2xvY2FsaG9zdDo4MDAwL21lZGlhL3Bob3Rvcy9wcm9kdWN0cy8yMDIzLzA5LzE4LzEucG5n`} alt="Product" /> */}
+              <img src={product.photos} alt="Product" />
             </div>
 
             {/* <!-- Post Content--> */}
             <div className={`post-content`}>
               <div className={`category`}>Photos</div>
 
-              <h1 className={`title`}>City Lights in New York</h1>
+              <h1 className={`title`}>{product.title}</h1>
 
-              <p className={`description`}>
-                New York, the largest city in the U.S., is an architectural
-                marvel with plenty of historic monuments, magnificent buildings
-                and countless dazzling skyscrapers.
-              </p>
+              <p className={`description`}>{product.description}</p>
               <p className={`description address`}>Homs, Alarman</p>
 
               <a className={`description coolis`} href="#book">
@@ -74,7 +72,7 @@ function Card() {
                         </span>
                     </div> */}
             </div>
-                    <StarBookmark />
+            <StarBookmark />
           </div>
         </div>
       </div>

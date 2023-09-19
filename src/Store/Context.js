@@ -24,7 +24,9 @@ export function AllContextProvider(props){
         toggleProfile : ToggleProfileIsOpen,
         
         productOpen : ProductIsOpen,
-        toggleProduct : ToggleProductIsOpen
+        toggleProduct : ToggleProductIsOpen,
+
+        ENDPOINT : 'http://localhost:8000'
     };
 
     return <AllContext.Provider value={context}>

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import Card from "../../Components/Card/Card";
 import MainNavigation from "../../Components/MainNavigation/MainNavigation";
@@ -11,6 +11,9 @@ import AutoTyping from "../../Components/Auto Typing/AutoTyping";
 import CardStore from "../../Components/Card Store/CardStore";
 import SideBar from "../../Components/SideBar/SideBar";
 import MiniProductDetails from "../Product Details/MiniProductDetails/MiniProductDetails";
+import { useContext } from "react";
+import AllContext from "../../Store/Context";
+
 export var a = 0;
 export var a2 = 0;
 export function resetAClose() {
@@ -23,11 +26,17 @@ export function resetAOpen() {
   a = 0;
   a2 = 0;
 }
-function Categories() {
+function Main() {
+  const [products, setProducts] = useState([]);
+  const END = useContext(AllContext);
   useEffect(() => {
     document.getElementById("transLeft").style.visibility = "hidden";
     document.getElementById("transLeft2").style.visibility = "hidden";
-  });
+
+    fetch(`${END.ENDPOINT}/products`)
+      .then((res) => res.json())
+      .then((products) => setProducts(products.Products));
+  },[END.ENDPOINT]);
 
   function translateCardsRight() {
     a -= 500;
@@ -145,11 +154,11 @@ function Categories() {
       <a href="SeeAllStores" className={classes.a}>
         SEE ALL {">>"}
       </a>
-      <div style={{ display: "flex" }} id="cards">
-        <Card />
-        <Card />
-        <Card />
-        <Card />
+      <div style={{ display: "flex" }} id="cards" >
+
+        {products.length!==0 ? products.map((product) => {
+          return <Card product={product} key={product.id}/>;
+        }): null}
       </div>
 
       <Author />
@@ -159,4 +168,4 @@ function Categories() {
     </div>
   );
 }
-export default Categories;
+export default Main;
