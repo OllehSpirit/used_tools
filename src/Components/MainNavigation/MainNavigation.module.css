@@ -84,7 +84,7 @@
     border-radius: 100px;
     /* border: 1px solid #3b3b3b; */
 }
-.row input{
+.row .input{
     background: transparent;
     color: #fff;
     font-weight: 600;
@@ -113,16 +113,16 @@
 .icon .fa-xmark{
     opacity: 0;
 }
-.container:hover input,
-input:focus,
-input:not(:placeholder-shown){
+.container:hover .input,
+.input:focus,
+.input:not(:placeholder-shown){
     width: 200px;
     padding: 1px;
     padding-left: 1.5rem;
 }
 .container:hover .fa-search,
-input:focus ~ .icon .fa-search,
-input:not(:placeholder-shown) ~ .icon .fa-search{
+.input:focus ~ .icon .fa-search,
+.input:not(:placeholder-shown) ~ .icon .fa-search{
     opacity: 0;
 }
 

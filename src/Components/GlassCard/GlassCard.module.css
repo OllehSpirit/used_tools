@@ -1,68 +1,190 @@
-.card{
-    background: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(4px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 30px;
-    width: 16rem;
-    height: 20rem;
-    position: relative;
-    right: 100px;
-    margin-left: 150px;
-    margin-bottom: 100px;
+.div {
+  display: inline-block;
+  width: 33%;
+}
+.card {
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 30px;
+  width: 60%;
+  height: 20rem;
+  position: relative;
+  left: 100px;
+  /* margin-left: 20%; */
+  margin-bottom: 100px;
 }
 
-.circle{
-    position: absolute;
-    /* top: 250px; */
-    /* left: 200px; */
-    margin-top: 170px;
-    margin-left: 150px;
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
-    background: deepskyblue;
-    transform: translate(-9rem, 6rem);
+.circle {
+  position: absolute;
+  /* top: 250px; */
+  /* left: 200px; */
+  margin-top: 170px;
+  margin-left: 15%;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  background: deepskyblue;
+  transform: translate(-9rem, 6rem);
+  z-index: -1;
 }
 
-.circle:nth-child(2){
-    transform: translate(6.5rem, -13.5rem);
-    background: deeppink;
+.circle:nth-child(2) {
+  transform: translate(6.5rem, -13.5rem);
+  background: deeppink;
 }
 
-.header{
-    text-align: center;
-    background-image: linear-gradient(to right, #6d4e8f, #406992);
-    -webkit-text-fill-color: transparent;
-    background-clip: unset;
-    -webkit-background-clip: text;
+.header {
+  text-align: center;
+  background-image: linear-gradient(to right, #6d4e8f, #406992);
+  -webkit-text-fill-color: transparent;
+  background-clip: unset;
+  -webkit-background-clip: text;
 }
 
-.text{
-    text-align: center;
-    font-size: 14px;
-    position: relative;
-    top: 20px;
+.text {
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+  top: 20px;
 }
 
-.img{
-    width: 130px;
-    height: 130px;
-    display: block;
-    margin: 0 auto;
-    margin-top: 60px;
+.img {
+  width: 130px;
+  height: 130px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 60px;
 }
 
-@media (max-width: 760px){
+/* @media (max-width: 760px){
     .card{
         top: 500px;
     }
     .circle{
         margin-top: 660px;
     }
-}
+} */
 
-@media (max-width: 470px){
+@media (max-width: 1186px) {
+  .circle {
+    height: 5rem;
+    width: 5rem;
+    transform: translate(-7rem, 6rem);
+  }
+  .div {
+    width: 32%;
+  }
+  .card {
+    padding: 8%;
+  }
+}
+@media (max-width: 1052px) {
+    .circle {
+      transform: translate(-6rem, 6rem);
+    }
+    .div {
+      width: 33%;
+    }
+  }
+  @media (max-width: 1020px) {
+    .circle {
+      transform: translate(-6rem, 6rem);
+    }
+    .div {
+      width: 33%;
+    }
+    .card {
+        padding: 8%;
+        width: 60%;
+        left: 100px;
+      }
+  }
+
+ @media (max-width: 977px){
+    .div{
+        position: relative;
+        left: 3px;
+    }
+    .card {
+        padding: 5%;
+        width: 100%;
+        left: 0px;
+        border: none;
+        border-radius: 0;
+      }
+      .circle {
+        transform: translate(-5.5rem, 6rem);
+      }
+      .circle:nth-child(2) {
+        transform: translate(14.5rem, -12.5rem);
+      }
+      
+ }
+ 
+ @media (max-width: 919px){
+    .text {
+        font-size: 11px;
+        position: relative;
+      }
+
+ }
+ @media (max-width: 700px){
+    .card {
+        padding: 0%;
+        /* width: 98%; */
+      }
+      .text {
+        font-size: 8px;
+        position: relative;
+      }
+    .circle {
+        transform: translate(-4.5rem, 6rem);
+      }
+      .circle:nth-child(2) {
+        transform: translate(9.5rem, -12.5rem);
+      }
+ }
+ @media (max-width: 540px){
+    .text {
+        position: relative;
+        top: 20px;
+        width: 35%;
+        left: 33%;
+      }
+      .header{
+        font-size: 16px;
+      }
+      .img{
+        width: 80px;
+        height: 80px;
+      }
+      .card{
+        height: 250px;
+      }
+      .circle {
+        transform: translate(-4.5rem, 2rem);
+      }
+      .circle:nth-child(2) {
+        transform: translate(8.5rem, -12.5rem);
+      }
+ }
+/* @media (max-width: 1186px){
+    .div{
+        display: block;
+        width: 100%;
+    }
+    .card{
+        border-radius: 10px;
+        padding: 30px;
+        width: 60%;
+        height: 20rem;
+        margin-left: 10%;
+        margin-bottom: 100px;
+    }
+ } */
+/* @media (max-width: 470px){
     .circle{
         display: none;
     }
@@ -75,4 +197,4 @@
         position: relative;
         left: -30px;
     }
-}
+} */

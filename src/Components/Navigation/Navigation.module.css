@@ -163,9 +163,9 @@
   }
 }
 
-@media (max-width: 446px) {
+@media (max-width: 450px) {
   .nav {
-    font-size: 9px;
+    font-size: 8px;
   }
   .nav:nth-child(5)::before,
   .nav:nth-child(5)::after {

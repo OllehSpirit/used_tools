@@ -54,7 +54,7 @@ function MainNavigation() {
 
       <div className={classes.container}>
         <div className={classes.row}>
-          <input type="text" placeholder="Search" />
+          <input type="text" placeholder="Search" className={classes.input}/>
           <div className={classes.icon}>
             <i className={`fa fa-search`}></i>
             <i className={`fa-solid fa-xmark`}></i>

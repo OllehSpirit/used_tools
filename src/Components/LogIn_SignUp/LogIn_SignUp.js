@@ -80,6 +80,16 @@ function togglePass(){
   // toggle the icon
   togglePassword.classList.toggle("bi-eye");
 }
+function togglePass2(){
+  const togglePassword = document.getElementById("togglePassword2"); 
+  const password = document.getElementById("password2"); 
+  const type = password.getAttribute("type") === "password" ? "text" : "password";
+  password.setAttribute("type", type);
+  console.log(type)
+  
+  // toggle the icon
+  togglePassword.classList.toggle("bi-eye");
+}
 
 return (
 <div className='page'>
@@ -102,13 +112,13 @@ return (
       <div id='passwordState'>{pass}</div>
 
       <fieldset className='gender'>
-        <legend><b>Gender</b></legend>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <legend><b> Gender</b></legend>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
         <input type="radio" name="gender" value="male" style={{cursor:'pointer'}} required />
         <label>Male</label>&nbsp;&nbsp;&nbsp;
 
         <input type="radio" name="gender" value="female" style={{cursor:'pointer'}}/>
-        <label>Female</label>
+        <label>Female</label>&nbsp;&nbsp;&nbsp;
       </fieldset>
 
       <div >
@@ -191,7 +201,8 @@ return (
     <form action="#" className="form" id="form2" >
       <h2 className="form__title">Sign In</h2>
       <input type="email" placeholder="Email" className="input2" />
-      <input type="password" placeholder="Password" className="input2" />
+      <input type="password" placeholder="Password" id='password2' className="input2" />
+      <i className={`bi bi-eye-slash`} id="togglePassword2" onClick={togglePass2}></i>
       <a href="#forget" className="link">
         Forgot your password?
       </a>

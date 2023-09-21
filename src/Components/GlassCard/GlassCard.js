@@ -2,7 +2,7 @@ import classes from './GlassCard.module.css'
 
 function GlassCard(props){
     return(
-        <div style={{display:'inline-block'}}>
+        <div className={classes.div}>
             <div className={classes.circle}></div>
             <div className={classes.circle}></div>
             <div className={classes.card}>
