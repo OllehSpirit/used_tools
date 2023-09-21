@@ -157,8 +157,8 @@ function Main() {
       <div style={{ display: "flex" }} id="cards" >
 
         {products.length!==0 ? products.map((product) => {
-          return <Card product={product} key={product.id}/>;
-        }): null}
+              return <Card product={product} key={product.id}/>;
+            }): null}
       </div>
 
       <Author />
