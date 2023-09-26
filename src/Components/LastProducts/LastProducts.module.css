@@ -18,9 +18,9 @@
     flex: 4;
   }
 
-  @media (max-width:760px){
+  /* @media (max-width:760px){
     .gallery{
       position: relative;
       top: 500px;
     }
-  }
+  } */

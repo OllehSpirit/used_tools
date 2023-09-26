@@ -21,7 +21,7 @@
     }
 }
 
-@media (max-width: 760px){
+/* @media (max-width: 760px){
     .h2{
         position: relative;
         top: 450px;
@@ -30,9 +30,9 @@
         position: relative;
         top: 400px;
     }
-}
+} */
 
-@media (max-width: 500px){
+@media (max-width: 630px){
     .h2{
         font-size: 1.5rem;
     }

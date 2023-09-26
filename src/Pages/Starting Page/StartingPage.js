@@ -51,13 +51,13 @@ function StartingPage() {
         />
       </div>
 
+      {/* <br />
       <br />
       <br />
       <br />
       <br />
       <br />
-      <br />
-      <br />
+      <br /> */}
       <a
         href="hid"
         name="products"
