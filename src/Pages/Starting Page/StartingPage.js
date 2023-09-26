@@ -33,6 +33,7 @@ function StartingPage() {
         style={{ marginTop: "500px" }}
       />
       <br />
+      <div style={{display : 'flex'}}>
         <GlassCard
           header="D O N A T E"
           text="One man's trash is another man's treasure, help others who are less fortunate "
@@ -48,6 +49,7 @@ function StartingPage() {
           text="You can make money out of your used stuff that you do not need any more"
           source="Images/Sell.png"
         />
+      </div>
 
       <br />
       <br />
