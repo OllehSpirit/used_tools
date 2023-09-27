@@ -33,7 +33,7 @@ function StartingPage() {
         style={{ marginTop: "500px" }}
       />
       <br />
-      <div style={{display : 'flex'}}>
+      <div>
         <GlassCard
           header="D O N A T E"
           text="One man's trash is another man's treasure, help others who are less fortunate "
@@ -50,14 +50,13 @@ function StartingPage() {
           source="Images/Sell.png"
         />
       </div>
-
-      {/* <br />
       <br />
       <br />
       <br />
       <br />
       <br />
-      <br /> */}
+      <br />
+      <br />
       <a
         href="hid"
         name="products"
