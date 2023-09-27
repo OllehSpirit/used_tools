@@ -1,41 +1,56 @@
-.footer{
-    background-color: #2d2d2d;
-    height: 420px;
-    width: 120%;
-    margin-left: -100px;
+.footer {
+  background-color: #2d2d2d;
+  /* height: 620px; */
+  /* width: 120%; */
+  /* margin-left: -100px; */
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 140px 100px 120px 40px;
 }
 
-.img{
-    height: 300px;
-    width: 300px;
-    display: inline;
-    margin-bottom: -300px;
-    margin-left: 350px;
+.img {
+  height: 300px;
+  width: 300px;
+  grid-column: 6;
+  grid-row: 1;
+  /* margin-bottom: -300px; */
+  /* margin-left: 20vw; */
 }
 
-.contact{
-    position: relative;
-    top: 100px;
-    color: #fff;
-    left: 690px;
+.contact {
+  position: relative;
+  left: 110px;
+  top: 110px;
+  /* display: inline; */
+  /* top: -200px; */
+  color: #fff;
+  /* left: 390px; */
+  grid-column: 1;
+  grid-row: 1;
+  width: 400px;
 }
 
-.copy{
-    position: relative;
-    top: 200px;
-    color: #fff;
-    /* left: 550px; */
-    text-align: center;
+.copy {
+  position: relative;
+  /* top: 200px; */
+  color: #fff;
+  left: 550px;
+  text-align: center;
+  width: 225px;
+  /* bottom: 0; */
+  grid-row: 4;
+
+  /* width: 1000px; */
 }
 
-@media (max-width:760px){
+/* @media (max-width:760px){
     .footer{
         position: relative;
         top: 500px;
     }
     
-}
-@media (max-width:960px){
+} */
+/* @media (max-width:960px){
 
     .contact{
         position: relative;
@@ -43,4 +58,41 @@
         color: #fff;
         left: 40px;
     }
+} */
+@media (max-width: 1120px) {
+  .img {
+    position: relative;
+    left: -150px;
+  }
+  .contact {
+    position: relative;
+    left: 250px;
+  }
+}
+
+@media (max-width: 810px) {
+  .img {
+    display: none;
+  }
+  .contact {
+    position: relative;
+    left: 230px;
+  }
+  .copy {
+    position: relative;
+    left: 320px;
+  }
+}
+
+@media (max-width: 490px) {
+  .contact {
+    font-size: 13px;
+    position: relative;
+    left: 187px;
+  }
+  .copy {
+    font-size: 13px;
+    position: relative;
+    left: 200px;
+  }
 }
